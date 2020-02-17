@@ -148,14 +148,14 @@ reg pipe6_outdelay2;
 
 reg pipe7_outdelay1;
 
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b0(.clk(clk), .ibit(0), .idata(idata), .obit(bit_out1));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b1(.clk(clk), .ibit(1), .idata(pipe2_indelay1), .obit(bit_out2));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b2(.clk(clk), .ibit(2), .idata(pipe3_indelay2), .obit(bit_out3));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b3(.clk(clk), .ibit(3), .idata(pipe4_indelay3), .obit(bit_out4));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b4(.clk(clk), .ibit(4), .idata(pipe5_indelay4), .obit(bit_out5));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b5(.clk(clk), .ibit(5), .idata(pipe6_indelay5), .obit(bit_out6));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b6(.clk(clk), .ibit(6), .idata(pipe7_indelay6), .obit(bit_out7));
-bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT) b7(.clk(clk), .ibit(7), .idata(pipe8_indelay7), .obit(bit_out8));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b0(.clk(clk), .ibit(0), .idata(idata), .obit(bit_out1));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b1(.clk(clk), .ibit(1), .idata(pipe2_indelay1), .obit(bit_out2));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b2(.clk(clk), .ibit(2), .idata(pipe3_indelay2), .obit(bit_out3));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b3(.clk(clk), .ibit(3), .idata(pipe4_indelay3), .obit(bit_out4));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b4(.clk(clk), .ibit(4), .idata(pipe5_indelay4), .obit(bit_out5));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b5(.clk(clk), .ibit(5), .idata(pipe6_indelay5), .obit(bit_out6));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b6(.clk(clk), .ibit(6), .idata(pipe7_indelay6), .obit(bit_out7));
+bitmod #(.AFFINE_CONSTANT(AFFINE_CONSTANT)) b7(.clk(clk), .ibit(7), .idata(pipe8_indelay7), .obit(bit_out8));
 
 assign odata = {pipe1_outdelay7, pipe2_outdelay6, pipe3_outdelay5, pipe4_outdelay4, pipe5_outdelay3, pipe6_outdelay2, pipe7_outdelay1, bit_out8};
 
